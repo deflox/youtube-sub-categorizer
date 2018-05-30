@@ -1,0 +1,29 @@
+/*
+ * General styling
+ */
+input {
+    margin-bottom: 8px;
+}
+
+/*
+ * Specific styling
+ */
+.authentication {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.authentication form {
+    margin-top: 20px;
+}
+.authentication button {
+    margin-top: 10px;
+}
+.authentication .reset-password-link {
+    font-size: 0.8em;
+}
+
+.authentication-link {
+    display: block;
+    text-align: center;
+}
