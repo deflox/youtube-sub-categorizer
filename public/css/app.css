@@ -1,26 +1,19 @@
 /*
  * General styling
  */
-input {
-    margin-bottom: 8px;
-}
+
 
 /*
  * Specific styling
  */
 .authentication {
     max-width: 350px;
-    margin: 0 auto;
-    margin-top: 5%;
-}
-.authentication form {
-    margin-top: 20px;
-}
-.authentication button {
-    margin-top: 10px;
+    margin: 5% auto 0 auto;
 }
 .authentication .reset-password-link {
     font-size: 0.8em;
+    font-weight: normal;
+    margin-top: 2px;
 }
 
 .authentication-link {

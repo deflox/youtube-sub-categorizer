@@ -1,47 +1,32 @@
 @extends('layouts.app')
 
+@section('title')
+    Reset password
+@endsection
+
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
-                        {{ csrf_field() }}
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Send Password Reset Link
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+    <div class="box authentication is-clearfix">
+        <h1 class="title is-2">Reset password</h1>
+        @if (session('status'))
+            <div class="notification is-danger">
+                {{ session('status') }}
             </div>
-        </div>
+        @endif
+        <form method="post" action="{{ route('password.email') }}">
+            {{ csrf_field() }}
+            <div class="field">
+                <label for="email" class="label">Your email:</label>
+                <div class="control">
+                    <input class="input {{ $errors->has('email') ? 'is-danger' : '' }}" type="email" name="email" id="email" value="{{ old('email') }}" required autofocus>
+                </div>
+                @if ($errors->has('email'))
+                    <p class="help is-danger">{{ $errors->first('email') }}</p>
+                @endif
+            </div>
+            <button class="button is-primary is-pulled-right">
+                Submit
+            </button>
+        </form>
     </div>
-</div>
+    <a href="{{ route('login') }}" class="authentication-link"><i class="fas fa-arrow-left"></i> Back</a>
 @endsection
