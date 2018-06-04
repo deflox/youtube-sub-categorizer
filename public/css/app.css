@@ -2,7 +2,6 @@
  * General styling
  */
 
-
 /*
  * Specific styling
  */
@@ -19,4 +18,45 @@
 .authentication-link {
     display: block;
     text-align: center;
+}
+
+.app-wrapper {
+    margin-top: 0;
+}
+.app-wrapper .left {
+    text-align: right;
+    padding-top: 50px;
+    background-color: #2ecc71;
+    height: 100vh;
+}
+.app-wrapper .left .app-title {
+    font-size: 5rem;
+}
+.app-wrapper .left .categories {
+    margin-top: 100px;
+}
+.app-wrapper .left .categories button {
+    margin-top: 30px;
+}
+.app-wrapper .right {
+    background-color: white;
+}
+.app-wrapper .right .feed {
+    max-width: 700px;
+    padding: 20px 0 0 20px;
+}
+.app-wrapper .right .feed .video {
+    margin-top: 5px;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+.app-wrapper .right .feed .video:hover {
+    background-color: rgba(46, 204, 113, 0.1);
+}
+.app-wrapper .right .feed .video img {
+    width: 220px;
 }
