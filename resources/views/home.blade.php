@@ -1,7 +1,11 @@
 @extends('layouts.app')
 
+@section('title')
+    Home
+@endsection
+
 @section('content')
-    <div class="columns app-wrapper">
+    <div id="app" class="columns app-wrapper">
         <div class="column is-one-third left">
             <h1 class="title is-1 app-title">YSC</h1>
             <h1 class="subtitle is-4">YouTube Sub Categorizer</h1>

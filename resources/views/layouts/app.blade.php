@@ -8,8 +8,10 @@
     <title>{{ config('app.name') }} - @yield('title')</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ asset('css/bulma.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    <!-- JavaScript -->
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
