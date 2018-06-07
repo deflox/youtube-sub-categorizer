@@ -7,11 +7,12 @@
 
     <title>{{ config('app.name') }} - @yield('title')</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <!-- Meta -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- JavaScript -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ asset('css/bulma.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -20,6 +21,11 @@
 <body>
 
     @yield('content')
+
+    <!-- JavaScript -->
+    <script src="{{ asset('js/vue.js') }}"></script>
+    <script src="{{ asset('js/axios.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
 </body>
 </html>

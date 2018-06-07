@@ -13,7 +13,7 @@
             </div>
         @endif
         <form method="post" action="{{ route('password.email') }}">
-            {{ csrf_field() }}
+            @csrf
             <div class="field">
                 <label for="email" class="label">Your email:</label>
                 <div class="control">

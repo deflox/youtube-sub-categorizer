@@ -34,15 +34,6 @@
                 </div>
                 <div class="columns video">
                     <div class="column is-one-third">
-                        <img src="https://i.ytimg.com/vi/R-sYzc5Y4LI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBsGhj2hJtgaDmt24RGeTqkJN_yog" alt="YouTube Thumbnail">
-                    </div>
-                    <div class="column">
-                        <h3 class="title is-5">ORIGIN PC's Intel Extreme Rig 2018</h3>
-                        <h3 class="subtitle is-6">ORIGIN PC - uploaded 15 minutes ago</h3>
-                    </div>
-                </div>
-                <div class="columns video">
-                    <div class="column is-one-third">
                         <img src="https://i.ytimg.com/vi/5XimcZ1ompA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBm36Q_FVIl5yfTQnYxeTQiLQc8ow" alt="YouTube Thumbnail">
                     </div>
                     <div class="column">

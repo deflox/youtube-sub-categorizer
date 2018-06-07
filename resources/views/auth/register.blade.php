@@ -9,7 +9,7 @@
         <h1 class="title is-1">Sign Up</h1>
         <h2 class="subtitle is-5">YouTube Sub Categorizer</h2>
         <form method="post" action="{{ route('register') }}">
-            {{ csrf_field() }}
+            @csrf
             <div class="field">
                 <label for="email" class="label">Your email:</label>
                 <div class="control">

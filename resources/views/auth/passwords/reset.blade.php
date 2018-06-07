@@ -8,7 +8,7 @@
     <div class="box authentication is-clearfix">
         <h1 class="title is-1">Reset password</h1>
         <form method="post" action="{{ route('password.request') }}">
-            {{ csrf_field() }}
+            @csrf
             <input type="hidden" name="token" value="{{ $token }}">
             <div class="field">
                 <label for="email" class="label">Your email:</label>
