@@ -14,3 +14,8 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
+
+// API
+Route::get('/api/categories', 'CategoriesController@categories');
+Route::get('/api/feed/{categoryId}', 'FeedController@feed');
+Route::post('/api/add/channel/{categoryId}', 'ChannelController@add');

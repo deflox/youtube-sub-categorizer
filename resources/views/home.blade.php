@@ -12,17 +12,21 @@
             <div class="categories">
                 <h3 class="title is-5">Your categories:</h3>
                 <ul>
+                    <li v-for="value in categories">
+                        @{{ value }}
+                    </li>
+                    <!--
                     <li><a href="">Gaming</a></li>
                     <li><a href="">Technology</a></li>
                     <li><a href="">Music</a></li>
-                    <li><a href="">Science</a></li>
+                    <li><a href="">Science</a></li>-->
                 </ul>
                 <button class="button is-primary is-inverted is-outlined is-small">Add category</button>
             </div>
         </div>
         <div class="column right">
             <div class="feed">
-                <h2 class="title is-2">Gaming<a class="button is-info is-pulled-right">Edit category</a></h2>
+                <h2 class="title is-2">Gaming<a class="button is-info is-pulled-right">Edit channels</a></h2>
                 <div class="columns video">
                     <div class="column is-one-third">
                         <img src="https://i.ytimg.com/vi/WDQNWYOogOI/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCZ0u1WpoNPzc0Y4SH0f9c5OjApAg" alt="YouTube Thumbnail">
